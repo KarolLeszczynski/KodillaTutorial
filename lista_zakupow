@@ -1,1 +1,20 @@
 print("test")
+shopping_dict = {
+    "Lidl": ["Maslo","woda","Cukier"],
+    "Kaufland": ["Szampan","tunczyk","Cukinia"]
+}
+
+for shop,item_list in shopping_dict.items():
+    for item in item_list:
+        print("Ide do sklepu", shop.upper() , "I kupuje tam", item.lower())
+        print("\n")
+
+counter_items = 0
+for shop,item_list in shopping_dict.items():
+    for item in item_list:
+        if item in item_list:
+            counter_items+=1
+
+        
+print("W sumie kupuje", counter_items, "produktów")
+print("W sumie kupuje {} produktów" .format(counter_items))
