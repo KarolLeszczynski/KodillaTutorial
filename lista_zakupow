@@ -18,3 +18,4 @@ for shop,item_list in shopping_dict.items():
         
 print("W sumie kupuje", counter_items, "produktów")
 print("W sumie kupuje {} produktów" .format(counter_items))
+print("Mam 30 lat")
